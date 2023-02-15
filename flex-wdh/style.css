@@ -1,0 +1,127 @@
+a{
+    margin-bottom: 20px;
+}
+
+
+.container
+{
+    /* bei flex muss man immer das eltern element auf flex setzen um dann die kinder zu plazieren */
+    margin-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+
+.box
+{
+    
+    width: 200px;
+    height: 200px;
+}
+
+.one 
+{
+    background-color: red;
+    
+}
+
+.two
+{
+    background-color: blue;
+}
+
+.three 
+{
+    background-color: green;
+}
+
+.four
+{
+    background-color: black;
+}
+
+
+
+.container2
+{
+    width: 80%;
+    margin: 0 auto;
+}
+/* bei before wird der inhalt immer vor dem element angezeigt worauf du das before beziehen möchtest */
+p::before
+{
+    content: "hallo welt ----";
+}
+/* bei after wird der inhalt immer hinter dem element angezeigt worauf du das after beziehen möchtest */
+p::after
+{
+    content: "--bye welt";
+}
+
+p:nth-child(4)::before
+{
+    border-left: 2px solid red;
+    content: "hallo---";
+}
+
+
+.container3
+{
+    
+    width: 80%;
+
+}
+
+.box_1
+{
+    height: 100vh;
+    background-image: url(./bilder/267163.jpg);
+    background-size: 100%;
+    background-position: center;
+    /* mit background-position-x kannst du die ansicht des bildes nach rechts oder links verschieben jeweils mit  */
+    background-position-x: -50px;
+    /* mit background-position-y kannst du die ansicht des bildes nach oben oder unten verschieben jeweils mit  */
+    background-position-y: -50px;
+}
+
+.container4
+{
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+    /* das elternelement sollte(muss) immer auf relative gesetzt werden weil sonst die elemente auf absolute auf der ganzen html rum schweben und somit das perfekte postionieren schwerer macht  */
+    position: relative;
+    background-color: tomato;
+    z-index: 100;
+}
+
+.box_4
+{
+    width: 5vw;
+    height: 5vh;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.box_5
+{
+    background-color: red;
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.box_6
+{
+    background-color: purple;
+    width: 5vw;
+    height: 5vh;
+}
