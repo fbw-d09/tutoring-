@@ -48,16 +48,17 @@ else console.log ('false');
 
 const dci = 15 ;
 const webDev = (dci < 15 ) ? 'webDev ist größer als DCI' 
-: ( dci > 15 ) ? ' webDev ist kleiner als DCi' :null; // null 
+: ( dci > 15 ) ? ' webDev ist kleiner als DCI' : undefined ; // null 
 console.log ( webDev) ;  
 
 if ( dci < 15 )
 {
     console.log ( 'webDev ist größer als DCI') ;
 }
-else 
+else if ( dci > 15) 
 {
     console.log ( ' webDev ist kleiner als DCi') ;
 }
+
 //for loops 
 
