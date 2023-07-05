@@ -19,8 +19,6 @@ export const FetchData = ({ className, ...props }) =>
 		}
 		
 		fetchData();
-
-
 	},[click]); 
 	
 	return (
