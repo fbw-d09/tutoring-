@@ -9,7 +9,7 @@ h1 {
 }
 
 &:hover {
-    background-color:black;
+    background-color:${props => props.bgColor || "white"};
 }
 
 `
